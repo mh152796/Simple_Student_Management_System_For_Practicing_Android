@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:layout_height="match_parent"
+    tools:context=".signup_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:id="@+id/updateId"
+            android:text="SIGN UP"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/userNameSignUpId"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter User Name"
+            android:textColorHint="#F3F1F1"
+            android:backgroundTint="#F8F6F6">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/fullNameSignUpId"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColorHint="#F3F1F1"
+            android:backgroundTint="#F8F6F6">
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:id="@+id/mobileNumberSignUpId"
+            android:textColorHint="#F3F1F1"
+            android:backgroundTint="#F8F6F6">
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordSignUpId"
+            android:hint="Password"
+            android:textColorHint="#F3F1F1"
+            android:backgroundTint="#F8F6F6">
+        </EditText>
+
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="By clicking SignUP you agree all the Terms and Conditions"
+        android:textColor="#E3E0E0"
+        android:id="@+id/checkboxSignUpId"
+        android:layout_marginBottom="20dp"
+        android:buttonTint="#E3E3E3">
+    </CheckBox>
+    <Button
+        android:textSize="25sp"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:id="@+id/buttonSignUpId"
+        android:backgroundTint="@color/teal_200"
+        android:text="SIGN UP"
+        android:layout_gravity="center"
+        android:textColor="@color/white">
+    </Button>
+
+
+</LinearLayout>

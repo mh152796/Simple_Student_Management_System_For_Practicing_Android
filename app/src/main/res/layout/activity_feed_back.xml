@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/teal_700"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feed_back">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:text="Feedback"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Enter your name"
+            android:textColorHint="#F3F1F1"
+            android:backgroundTint="#F8F6F6"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/nameId">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Message"
+            android:textColorHint="#F3F1F1"
+            android:backgroundTint="#F8F6F6"
+            android:padding="5dp"
+            android:id="@+id/messageId">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="17sp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:textStyle="bold"
+            android:id="@+id/submitButtonId"
+            >
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/clearButtonId"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

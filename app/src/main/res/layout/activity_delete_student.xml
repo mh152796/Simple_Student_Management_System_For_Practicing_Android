@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/teal_700"
+    android:layout_height="match_parent"
+    tools:context=".delete_student">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="username"
+        android:backgroundTint="@color/white"
+        android:padding="15sp"
+        android:textColorHint="#E3E0E0"
+        android:id="@+id/deleteEditText"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        >
+    </EditText>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/deleteButtonId"
+        android:textAllCaps="false"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_200"
+        />
+
+</LinearLayout>

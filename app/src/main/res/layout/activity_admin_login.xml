@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:layout_height="match_parent"
+    tools:context=".admin_login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textColor="#F8F5F5"
+            android:textAlignment="center"
+            android:textStyle="bold">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:hint=" User name"
+            android:textColorHint="#ECE4E4"
+            android:padding="15dp"
+            android:id="@+id/adminUserNameId"
+            android:textColor="#CCCBCB"
+            android:backgroundTint="#ECE4E4"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/user">
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:hint=" password"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:padding="15sp"
+            android:textColorHint="#E3E0E0"
+            android:id="@+id/adminPassId"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/password_icon">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight=".5">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:id="@+id/adminShowPassword"
+            android:textColor="#E3E0E0"
+            android:buttonTint="#E3E3E3">
+        </CheckBox>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#E3E0E0">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/admin_login_btn"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/teal_200"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
